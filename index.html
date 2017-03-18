@@ -14,9 +14,9 @@ ul.tab {
     border: 1px solid #ccc;
     background-color: lightblue;
     position: absolute;
-    top:100px;
-    left:200px;
-    right:200px;
+    top:0px;
+    left:300px;
+    right:500px;
 }
 
 /* Float the list items side by side */
@@ -36,11 +36,13 @@ ul.tab li a {
 /* Change background color of links on hover */
 ul.tab li a:hover {
     background-color: #ddd;
+    color:white;
 }
 
 /* Create an active/current tablink class */
 ul.tab li a:focus, .active {
     background-color: #ccc;
+    color:white;
 }
 
 /* Style the tab content */
@@ -62,12 +64,12 @@ h1.serif {
  
 ci {
     position: fixed;
-    left: 50px;
+    left: 100px;
     top: 300px;
 }
 ci1 {
     position: fixed;
-    left: 5px;
+    left: 55px;
     top: 315px;
 }
     
@@ -78,18 +80,19 @@ ci1 {
 <h1 class="serif">Patrick Tomas </h1>
 
 <div>
-<img src="me.png" alt="Me" style="width:170px;height:180px;position:fixed;top:150" >
+<img src="me.png" alt="Me" style="width:170px;height:180px;position:fixed;top:150;left:50" >
 </div>
 <ci><i>Contact me!</i></ci>
 <ci1><b>p.tomas14@gmail.com</b></ci1>
     
 <ul class="tab">
-  <li><a href="#" class="tablinks" onclick="openEvent(event, 'About Me')">About Me</a></li>
+  <li><a href="#" class="tablinks" onclick="openEvent(event, 'About')">About</a></li>
+  <li><a href="#" class="tablinks" onclick="openEvent(event, 'websites')">Websites</a></li>
   <li><a href="#" class="tablinks" onclick="openEvent(event, 'Projects')">Projects</a></li>
   <li><a href="#" class="tablinks" onclick="openEvent(event, 'Resume')">Resume</a></li>
 </ul>
 
-<div id="About Me" class="tabcontent">
+<div id="About" class="tabcontent">
   <h3>What I Do</h3>
     <p><b>Web Design</b></p>
         <p>As a web designer I make custom websites. Websites can impliment a variety of features such as is listed below.</p>
@@ -106,6 +109,12 @@ ci1 {
         <p>As a student I previously attended The University of Colorado Boulder for Electrical Engineering, currently I am</p>
         <p>enrolled at Santa Barbara City College for Computer Science.</p>
  </div>
+    
+ <div id="Websites" class="tabcontent">
+     <h3><center>Websites</center></h3>
+
+</div>
+
 
 <div id="Projects" class="tabcontent">
   <h3>Projects</h3>
