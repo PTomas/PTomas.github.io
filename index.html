@@ -2,6 +2,43 @@
 <html>
 <Head>
     <link rel="icon" href="profile.png">
+    ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px 10px;
+    overflow: hidden;
+    border-bottom: 5px solid darkblue;
+    position: absolute;
+    text-align: center;
+    top:0px;
+    left:0px;
+    right:0px;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: darkblue;
+    //text-shadow: 2px 2px black;
+    text-align: center;
+    padding: 45px 20px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 20px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {
+    color:blue;
+}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {
+    color:blue;
+}
 </Head>
     
 <style>
@@ -34,44 +71,6 @@
     top:320px;
     left:0px;
     right:0px;
-}
-    
-ul.tab {
-    list-style-type: none;
-    margin: 0;
-    padding: 0px 10px;
-    overflow: hidden;
-    border-bottom: 5px solid darkblue;
-    position: fixed;
-    text-align: center;
-    top:0px;
-    left:0px;
-    right:0px;
-}
-
-/* Float the list items side by side */
-ul.tab li {float: left;}
-
-/* Style the links inside the list items */
-ul.tab li a {
-    display: inline-block;
-    color: darkblue;
-    //text-shadow: 2px 2px black;
-    text-align: center;
-    padding: 45px 20px;
-    text-decoration: none;
-    transition: 0.3s;
-    font-size: 20px;
-}
-
-/* Change background color of links on hover */
-ul.tab li a:hover {
-    color:blue;
-}
-
-/* Create an active/current tablink class */
-ul.tab li a:focus, .active {
-    color:blue;
 }
         
 h1 {
