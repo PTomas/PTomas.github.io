@@ -1,8 +1,8 @@
-var x = document.getElementById("Home");
-var y = document.getElementById("Projects");
-var z = document.getElementById("Websites");
-var a = document.getElementById("About");
-var b = document.getElementById("Merch");
+var x = document.getElementById("#Home");
+var y = document.getElementById("#Projects");
+var z = document.getElementById("#Websites");
+var a = document.getElementById("#About");
+var b = document.getElementById("#Merch");
 
 
 
@@ -19,7 +19,7 @@ var b = document.getElementById("Merch");
     }
   }
 
-  document.getElementById("Projects").style.display = "none";
+  document.getElementById("#Projects").style.display = "none";
   function projectsFunction() {
     //var y = document.getElementById("photoLink");
     
@@ -34,7 +34,7 @@ var b = document.getElementById("Merch");
     }
   }
 
-  document.getElementById("Websites").style.display = "none";
+  document.getElementById("#Websites").style.display = "none";
   function websitesFunction() {
     //var x = document.getElementById("jumboLink");
     
@@ -50,7 +50,7 @@ var b = document.getElementById("Merch");
     
   }
 
-  document.getElementById("About").style.display = "none";
+  document.getElementById("#About").style.display = "none";
   function servicesFunction() {
     //var x = document.getElementById("jumboLink");
     
