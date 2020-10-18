@@ -47,6 +47,8 @@ var b = document.getElementById("Merch");
     } else {
         z.style.display = "none";
     }
+    
+  }
 
   document.getElementById("About").style.display = "none";
   function servicesFunction() {
