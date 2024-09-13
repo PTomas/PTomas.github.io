@@ -42,7 +42,7 @@ window.onload = () => {
             b++;
             for(let i = 0; i < 100; i++) {
 
-                let randCir = Math.floor(Math.random() * 35)
+                let randCir = Math.floor(Math.random() * 40)
                 var theta = Math.random()*Math.PI*2;
 
                 x = Math.cos(theta)*randCir;
@@ -51,7 +51,7 @@ window.onload = () => {
                 // splatter.push(new Spaltters())
                 // splatter[i].draw()
                 ctx.beginPath();
-                ctx.arc(x+randWi, y+randHi, 1, 0, 2 * Math.PI);
+                ctx.arc(x+randWi, y+randHi, 2, 0, 2 * Math.PI);
                 ctx.fillStyle = rgb[randCol];
                 ctx.lineWidth = 0;
                 ctx.fill();  
