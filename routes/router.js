@@ -11,8 +11,8 @@ router.get('/', function (req, res) {
     res.render("index")
 });
 
-router.get('/products', function (req, res) {
-    res.render("products")
+router.get('/projects', function (req, res) {
+    res.render("projects")
 });
 
 router.get('/contact', function (req, res) {
@@ -24,5 +24,12 @@ router.post('/userquery', urlencodedParser, function(req, res){
   createResponce(getResponce);
 })
 
+router.get('/assets/profile.png', function (req, res) {
+    res.sendFile(path.join(__dirname, "/assets/profile.png"));
+});
+
+router.get('/assets/LAImage.png', function (req, res) {
+    res.sendFile(path.join(__dirname, "/assets/LAImage.png"));
+});
 
 module.exports = router
