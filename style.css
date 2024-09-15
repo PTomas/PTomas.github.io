@@ -1,0 +1,196 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/assets/LAImage.jpg");
+    background-repeat: no-repeat no-repeat;
+    background-size: 100% 100%;
+    font-family: 'Arial';
+}
+
+.background {
+   
+    position: absolute;
+    top: 5rem;
+    height:100vw;
+    width:100vw;
+    z-index: -1;
+}
+
+.header{
+    margin-top: 0px;
+    width: 100%;
+    height: 5rem;
+    padding: 16px 16px;
+    background-color: #242321;
+    display:inline-block;
+    font-family: 'Arial';
+
+}
+.banner {
+    color: white;
+}
+
+.nav-link {
+    color: white;
+
+}
+
+.animation-box {
+    background-color: #242321;
+    width: 100vw;
+    height: 35rem;
+}
+
+.canvas {
+    position: absolute;
+}
+
+.profile-container {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    width: 100vw;
+    height: auto;
+    position: absolute;
+    margin-top: -100px;
+}
+
+.profile-container> .profile_pic{
+    display: flex;
+    /* margin-left: auto;
+    margin-right: auto; */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: solid white 4px;
+
+}
+
+.tabcontent{
+    display: flex;
+    border: 2px solid black;
+    background-color: white;
+    flex-direction: column;
+    width: 85%;
+    border: solid black 2px;
+    border-radius: 10px;
+    margin-top: 150px;
+}
+
+
+
+.section-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    background-color: #242321;
+    color: #D3D3D3;
+    font-size: larger;
+    font-weight: bolder;
+    margin: 0px;
+    border-radius: 5px;
+}
+
+.doc-main {
+    margin-top: 100px;
+}
+
+.doc-main-alt {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+b{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.doc-content {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    color: black;
+    font-size: medium;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.responsive {
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    margin-left: 100px;
+    color: #007FFF;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.app {
+    width: 100px;
+    height: 200px;
+}
+
+.stran {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.dev {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.devBoard {
+    width: 350px;
+    height: 200px;
+}
+
+li a{
+    padding: 8px 16px;
+    text-decoration: none;
+    color: white;
+}
+
+li :hover{
+    background-color: blue;
+    color:white;
+    height: 30px;
+}
+
+li :focus{
+    background-color: lightskyblue;
+}
+
+
