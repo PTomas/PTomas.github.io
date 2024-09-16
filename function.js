@@ -40,7 +40,7 @@ window.onload = () => {
             let randWi = Math.floor(Math.random() * w);
             let randCol = Math.floor(Math.random() * 7);
             b++;
-            for(let i = 0; i < 100; i++) {
+            for(let i = 0; i < 250; i++) {
 
                 let randCir = Math.floor(Math.random() * 40)
                 var theta = Math.random()*Math.PI*2;
@@ -48,10 +48,8 @@ window.onload = () => {
                 x = Math.cos(theta)*randCir;
                 y = Math.sin(theta)*randCir;
 
-                // splatter.push(new Spaltters())
-                // splatter[i].draw()
                 ctx.beginPath();
-                ctx.arc(x+randWi, y+randHi, 2, 0, 2 * Math.PI);
+                ctx.arc(x+randWi, y+randHi, 1.2, 0, 2 * Math.PI);
                 ctx.fillStyle = rgb[randCol];
                 ctx.lineWidth = 0;
                 ctx.fill();  
@@ -68,21 +66,4 @@ window.onload = () => {
         
     }
 
-}
-
-class Splatters {
-    constructor() {
-        this.x = getRandomInt(0, w);
-        this.y = getRandomInt(0, h);
-        this.size = getRandomInt(30, 40)
-        this.style = rgb[getRandomInt(0, rgb.length - 1)];
-    }
-
-    draw() {
-        ctx.fillStyle = this.style;
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-        ctx.closePath();
-        ctx.fill();
-    }
 }
