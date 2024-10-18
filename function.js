@@ -49,7 +49,7 @@ window.onload = () => {
                 y = Math.sin(theta)*randCir;
 
                 ctx.beginPath();
-                ctx.arc(x+randWi, y+randHi, 1.2, 0, 2 * Math.PI);
+                ctx.arc(x+randWi, y+randHi, 1.5, 0, 2 * Math.PI);
                 ctx.fillStyle = rgb[randCol];
                 ctx.lineWidth = 0;
                 ctx.fill();  
