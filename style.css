@@ -153,6 +153,12 @@ li {
     justify-content: center;
     align-items: center;
 }
+
+.webcamAR{
+    width: 350px;
+    height: 250px;
+}
+
 .app {
     width: 100px;
     height: 200px;
