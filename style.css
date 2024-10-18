@@ -152,9 +152,14 @@ li {
     align-items: center;
 }
 
+.chatbot{
+    width: 350px;
+    height: 300px;
+}
+
 .webcamAR{
     width: 350px;
-    height: 250px;
+    height: 300px;
 }
 
 .app {
