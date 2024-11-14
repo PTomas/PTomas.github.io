@@ -78,8 +78,7 @@ body{
     border: solid black 2px;
     border-radius: 10px;
     margin-top: 150px;
-    align-items: center;
-    justify-content: center;
+    
 }
 
 
@@ -139,6 +138,8 @@ b{
 .responsive {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 li {
