@@ -44,6 +44,42 @@ body{
     height: 35rem;
 }
 
+.background {
+    width: 70vw; /* Set a fixed width */
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, 0%);
+    align-self: center;
+    justify-content: center;
+    background: darkblue;
+    display: flex;
+    flex-direction: row;
+    z-index: 0;
+    box-shadow: #242321 0px 0px 20px 5px;
+
+}
+
+.animation {
+    width: 600px; /* Set a fixed width */
+    height: 450px;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, 0%);
+    z-index: 2;
+}
+.static {
+    width: 600px; /* Set a fixed width */
+    height: 450px;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, 0%);
+    z-index: 1;
+}
+
 .canvas {
     position: absolute;
 }
